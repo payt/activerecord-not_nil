@@ -1,0 +1,5 @@
+source "https://rubygems.org"
+
+gemspec
+
+gem 'not_nil', git: "git@github.com:payt/not_nil.git"
