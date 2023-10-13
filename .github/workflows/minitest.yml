@@ -1,6 +1,6 @@
 name: Run MiniTest
-on:
-  push
+on: [push, pull_request]
+
 jobs:
   run-minitest:
     runs-on: ubuntu-latest
