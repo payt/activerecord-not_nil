@@ -1,0 +1,14 @@
+first:
+  name: first
+  active: true
+  fake_record_id: 1
+
+second:
+  name: second
+  active: true
+  fake_record_id: 2
+
+third:
+  name: third
+  active: false
+  fake_record_id: 1
