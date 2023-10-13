@@ -1,11 +1,8 @@
 name: Run MiniTest
 on:
   push:
-    paths:
-      - "lib/**"
-      - "test/**"
-      - ".github/workflows/minitest.yml"
-      - "Gemfile.lock"
+    branches:
+      - "!main"
 jobs:
   run-minitest:
     runs-on: ubuntu-latest
