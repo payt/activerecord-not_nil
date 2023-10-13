@@ -21,16 +21,8 @@ end
 
 module ActiveRecord
   module ConnectionAdapters
-    # module NotNullOverride
-    # def quote(value)
-    #   return "NOT NULL" if value == not_nil
-
-    #   super
-    # end
-    # end
 
     module Quoting
-      # prepend NotNullOverride
 
       alias origin_type_cast type_cast
       def type_cast(value)
