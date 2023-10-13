@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |spec|
   spec.name     = 'activerecord-not_nil'
-  spec.version  = '0.0.1'
+  spec.version  = '0.0.2'
   spec.summary  = 'Add support for a not_nill type to active record.'
-  spec.files    = ['lib/activerecord-not_nil.rb']
+  spec.files    = Dir['lib/**/*.rb']
   spec.authors  = ['Payt devs']
   spec.email    = ['devs@paytsoftware.com']
   spec.homepage = 'https://github.com/payt/activerecord-not_nil'
