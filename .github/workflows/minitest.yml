@@ -2,10 +2,10 @@ name: Run MiniTest
 on:
   push:
     paths:
-      - 'lib/**'
-      - 'test/**'
-      - '.github/workflows/minitest.yml'
-      - 'Gemfile.lock'
+      - "lib/**"
+      - "test/**"
+      - ".github/workflows/minitest.yml"
+      - "Gemfile.lock"
 jobs:
   run-minitest:
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
         with:
           # runs 'bundle install' and caches installed gems automatically
           bundler-cache: true
-          ruby-version: '2.6'
+          ruby-version: "2.7"
       - name: Run tests
         run: |
           rake test
