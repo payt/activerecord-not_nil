@@ -10,6 +10,6 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 2'
 
-  spec.add_runtime_dependency 'activerecord', '> 6', '< 8'
-  spec.add_runtime_dependency 'not_niller'
+  spec.add_dependency 'activerecord', '> 6', '< 8'
+  spec.add_dependency 'not_niller'
 end
