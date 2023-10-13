@@ -1,8 +1,6 @@
 name: Run MiniTest
 on:
-  push:
-    branches:
-      - "!main"
+  push
 jobs:
   run-minitest:
     runs-on: ubuntu-latest
