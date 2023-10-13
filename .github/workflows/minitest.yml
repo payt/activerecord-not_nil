@@ -20,4 +20,4 @@ jobs:
           rubygems: "latest"
       - name: Run tests
         run: |
-          rake test
+          rake test --trace
