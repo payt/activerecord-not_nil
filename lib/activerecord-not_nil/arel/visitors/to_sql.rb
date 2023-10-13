@@ -2,11 +2,10 @@
 
 module Arel
   module Visitors
+    # Module to override Arel::Visitors::ToSql#visit_Arel_Nodes_Equality
     module NotNilOverride
-      def visit_Arel_Nodes_Equality(o, collector)
+      def visit_Arel_Nodes_Equality(o, collector) # rubocop:disable Naming/MethodName
         return super if o.right.is_a?(Arel::Attributes::Attribute)
-
-        binding.pry if o.right.is_a?(Arel::Nodes::NamedFunction)
         return super if o.right.is_a?(Arel::Nodes::NamedFunction)
         return super unless o.right.value.is_a?(::NotNilClass)
 
